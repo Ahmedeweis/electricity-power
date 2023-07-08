@@ -145,11 +145,11 @@ aside ul li a {
   align-items:center;
   font-size:16px;
   color:black;
-  border-radius:6px;
   padding:10px;
   transition: 0.3s;
   margin-bottom: 5px;
   font-weight: bold;
+  transition:0.1s;
 }
 .out {
   color:red;
@@ -157,6 +157,7 @@ aside ul li a {
 aside ul li a:hover,
 aside ul li a.active {
   background-color: #ddd;
+  border-left:#2196F3 4px solid;
 }
 
 aside ul li a img {
@@ -189,14 +190,98 @@ aside ul li a img {
     display:flex;
     margin-top:15px;
   }
+  .special:hover{
+    background-color:transparent;
+    border-left: #2196F3 4px solid;
+  }
 }
 .content {
   width:100%;
   overflow: hidden;
 }
+/* 0 ul  */
+.catchs-a {
+  display:flex;
+  justify-content:flex-start;
+  align-items:flex-start;
+  flex-direction:column;
+}
+.catch-a-arrow {
+  display: flex;
+  flex-direction:row;
+  position:relative;
+}
+
+.linko {
+  color:black;
+  background-color:white;
+  width:100%;
+  text-decoration:none;
+  font-weight: bold;
+  border-radius:3px;
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  font-size:16px;
+  color:black;
+  padding-top:5px;
+  transition: 0.3s;
+  margin-bottom: 5px;
+  font-weight: bold;
+  transition:0.1s;
+}
+.linko:hover{
+  background-color: #ddd;
+  border-left:#2196F3 4px solid;
+}
+.arrow-img {
+  width:20px;
+}
+@media (max-width: 767px) {
+  .arrow-img {
+    display:none;
+  }
+}
+.logo-img {
+  width:100px;
+}
+
+.catch-a-arrow {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.arrow {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow-links {
+  position: absolute;
+  top: -42px;
+  right: -250px;
+  background-color:white;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  z-index: 999;
+  width: fit-content;
+  border: 2px solid #0D47A1;
+  padding:10px 5px;
+}
+.catch-a-arrow:hover 
+.arrow-links {
+  opacity: 1;
+  visibility: visible;
+  border-left: #2196F3 4px solid
+}
+/* 1 ul*/
 /* 1 sidebar */
 /* 1 Header */
-/* 0 bill Table */
+/* 0 bills Table */
 .Bills {
   padding: 20px;
   background-color: white;
@@ -279,8 +364,7 @@ tbody tr:nth-child(even) {
 .Progress  {
   background-color: #0075FF;
 }
-
-/* 1 bill Table */
+/* 1 bills Table */
 
 /* 0 Landing */
 
