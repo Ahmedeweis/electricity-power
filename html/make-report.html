@@ -74,32 +74,37 @@
 			<!-- End Head -->
 			<!-- Start Projects Table -->
 			<div class="Bills">
-				<h2 class="">Cancellation Mater Request</h2>
-                <div class="cancel-mater-body">
-                    <h1 class="cancel-mater-h">Meter Cancellation Request</h1>
-                    <form class="cancel-mater-f" method="POST" action="/submit_meter_cancellation_request">
+				<h2 class="">Mater Request</h2>
+                <div class="report-problem-body">
+                    <h1 class="report-problem-h">Report Electricity Bill Problem</h1>
+                    <form class="report-problem-f" method="POST" action="/submit_bill_problem_report">
                       <div class="form-group">
-                        <label class="cancel-mater-label" for="name">Name:</label>
-                        <input class="cancel-mater-input" type="text" id="name" name="name" required>
+                        <label class="report-problem-label" for="name">Name:</label>
+                        <input class="report-problem-input" type="text" id="name" name="name" required>
                       </div>
                 
                       <div class="form-group">
-                        <label class="cancel-mater-label" for="email">Email:</label>
-                        <input class="cancel-mater-input" type="email" id="email" name="email" required>
+                        <label class="report-problem-label" for="email">Email:</label>
+                        <input class="report-problem-input" type="email" id="email" name="email" required>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="report-problem-label" for="bill_number">Mater Number:</label>
+                        <input class="report-problem-input" type="text" id="bill_number" name="Mater_number" required>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="report-problem-label" for="bill_number">Bill Number:</label>
+                        <input class="report-problem-input" type="text" id="bill_number" name="bill_number" required>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="report-problem-label" for="problem_description">Problem Description:</label>
+                        <textarea class="report-problem-textarea" id="problem_description" name="problem_description" rows="4" required></textarea>
                       </div>
                 
                       <div class="form-group">
-                        <label class="cancel-mater-label" for="meter_number">Meter Number:</label>
-                        <input class="cancel-mater-input" type="text" id="meter_number" name="meter_number" required>
-                      </div>
-                
-                      <div class="form-group">
-                        <label class="cancel-mater-label" for="reason">Reason for Cancellation:</label>
-                        <textarea class="cancel-mater-textarea" id="reason" name="reason" rows="4" required></textarea>
-                      </div>
-                
-                      <div class="form-group">
-                        <input class="cancel-mater-input-sub" type="submit" value="Submit Request">
+                        <input class="report-problem-input-sub" type="submit" value="Submit Report">
                       </div>
                     </form>
                   </div>
