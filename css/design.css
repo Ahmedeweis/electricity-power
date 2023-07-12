@@ -109,6 +109,10 @@ button {
     width: 1170px;
   }
 }
+.icon-im {
+  width:30px;
+}
+
 /* 1 Global Rules */
 
 /* 0 Header */
@@ -1075,8 +1079,8 @@ padding: 10px;
 }
 
 .add-mater-textarea {
-  height: 100px;
-  resize: vertical;
+  min-height: 100px;
+  resize:none;
 }
 
 .add-mater-input-sub {
@@ -1149,8 +1153,8 @@ padding: 10px;
 }
 
 .cancel-mater-textarea {
-  height: 100px;
-  resize: vertical;
+  min-height: 100px;
+  resize: none;
 }
 
 .cancel-mater-input-sub {
@@ -1262,3 +1266,108 @@ padding: 10px;
   }
 }
 /* 1 report problem page */
+/* ************************************************************************************************ */
+/* 0 Requests */
+.no-req {
+  color: red;
+  font-size: var(--large-font);
+  text-align: center;
+}
+
+/* 0 data-table */
+.data-table {
+  width: 100%;
+  margin-top: 30px;
+  background-color: white;
+  box-shadow: 0 0 10px #ddd;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.data-table th {
+  background-color: #f5f5f5;
+  color: #000;
+  font-weight: bold;
+}
+
+.data-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.data-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.filters label {
+  margin-right: 10px;
+}
+
+.filters select,
+.filters input[type="date"],
+.filters input[type="text"] {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.filters button {
+  padding: 5px 10px;
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+}
+
+/* 1 data-table */
+
+/* 0 utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-success {
+  color: green;
+}
+
+.text-warning {
+  color: orange;
+}
+
+.text-danger {
+  color: red;
+}
+
+.bg-primary {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.btn-primary {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--main-color-alt);
+}
+
+/* 1 Requests */

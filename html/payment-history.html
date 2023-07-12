@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cancel-mater</title>
+	<title>Bills Table</title>
 	<!-- Render All Elements Normally -->
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 	<!-- main css file -->
@@ -32,7 +32,7 @@
 						</a>
 					</li>
 					<li class="catch-a-arrow linko">
-						<a class="special active">
+						<a class="special">
 							<img src="../imgs/electric-panel.png">
 							<span>Mater</span>
 						</a>
@@ -41,7 +41,7 @@
 							<a class="linko" id="a" href="Add-mated.html"><img src="../imgs/plus.png"> Add Mater</a>
 							<a class="linko" id="a" href="transfare-mater.html"><img
 									src="../imgs/data-transfer.png">Transfere mater</a>
-							<a class="linko active" id="a" href="Cancel-mater.html"><img src="../imgs/cancel.png">Cancellation
+							<a class="linko" id="a" href="Cancel-mater.html"><img src="../imgs/cancel.png">Cancellation
 								Mater</a>
 						</ul>
 					</li>
@@ -58,7 +58,7 @@
 						</a>
 					</li>
                     <li>
-						<a class="" href="payment-history.html">
+						<a class="active" href="payment-history.html">
 							<img src="../imgs/statement.png">
 							<span>Payment History</span>
 						</a>
@@ -81,49 +81,58 @@
 			<!-- End Head -->
 			<!-- Start Projects Table -->
 			<div class="Bills">
-				<h2 class="">Cancellation Mater</h2>
-                <div class="cancel-mater-body">
-                    <h1 class="cancel-mater-h">Meter Cancellation Request</h1>
-                    <form class="cancel-mater-f" method="POST" action="/submit_meter_cancellation_request">
-                      <div class="form-group">
-                        <label class="cancel-mater-label" for="name">Name:</label>
-                        <input class="cancel-mater-input" type="text" id="name" name="name" required>
-                      </div>
-                
-                      <div class="form-group">
-                        <label class="cancel-mater-label" for="email">Email:</label>
-                        <input class="cancel-mater-input" type="email" id="email" name="email" required>
-                      </div>
-                
-                      <div class="form-group">
-                        <label class="cancel-mater-label" for="meter_number">Meter Number:</label>
-                        <input class="cancel-mater-input" type="text" id="meter_number" name="meter_number" required>
-                      </div>
-                
-                      <div class="form-group">
-                        <label class="cancel-mater-label" for="reason">Reason for Cancellation:</label>
-                        <textarea class="cancel-mater-textarea" id="reason" name="reason" rows="4" required></textarea>
-                      </div>
-                
-                      <div class="form-group">
-                        <input class="cancel-mater-input-sub" type="submit" value="Submit Request">
-
-						<!-- case of edite  -->
-						<!--  
-						<input class="add-mater-input-sub" type="submit" value="Edite">
-						-->
-						<!-- case of edite  -->
-						
-                      </div>
-                    </form>
-                  </div>
+				<h2 class="">Bills</h2>
+				<div class="responsive-table">
+					<!-- 0 table -->
+					<table class="data">
+						<!-- 0 table head -->
+						<thead>
+							<tr>
+								<td>Name</td>
+								<td>Meter Number</td>
+								<td>Bill Number</td>
+								<td>Pay date</td>
+								<td>Value</td>
+								<td>Payment method</td>
+							</tr>
+						</thead>
+						<!-- 1 table head -->
+						<!-- 0 table body -->
+						<tbody>
+							<!-- 0 rows -->
+							<!-- 0 row -->
+							<tr>
+								<td>Zain</td>
+								<td>699832</td>
+								<td>03 23</td>
+								<td>31/5/2023</td>
+								<td>SAR 1350</td>
+								<td><span class="label payed">Credite</span></td>
+							</tr>
+							<!-- 1 row -->
+							<!-- 0 row -->
+							<tr>
+								<td>Zain</td>
+								<td>702632</td>
+								<td>05 23</td>
+								<td>6/6/2023</td>
+								<td>SAR 600</td>
+								<td><span class="label payed">PayPal</span></td>
+							</tr>
+							<!-- 1 row -->							
+							<!-- 1 rows -->
+						</tbody>
+						<!-- 1 table body -->
+					</table>
+					<!-- 1 table -->
+				</div>
 			</div>
 			<!-- End Projects Table -->
-
 		</div>
 	</section>
 	<!-- 0 scripts  -->
-	
+	<script>
+	</script>
 	<!-- 1 scripts  -->
 </body>
 
