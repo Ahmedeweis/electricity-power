@@ -415,7 +415,7 @@ aside ul li a img {
   margin: auto;
   text-align: center;
   list-style: none;
-  padding: 10px 20px 10px 10px;
+  padding: 10px;
   background: #ffffff;
   border: 3px solid black;
   border-radius: 5px;
@@ -1371,3 +1371,270 @@ padding: 10px;
 }
 
 /* 1 Requests */
+/* ************************************************************************************************ */
+/* ************************************************************************************************ */
+/* ************************************************************************************************ */
+/* ************************************************************************************************ */
+/* ************************************************************************************************ */
+/* 0 admin pages */
+
+/* 0 Users */
+/* 0 boxes */
+
+/* Start Work Steps */
+
+/*media (max-width: 991px) {
+  .work-steps .container {
+    flex-direction: column;
+  }
+}
+*/
+.post {
+margin-top:15px;
+border:3px solid #e0e0e0;
+border-radius:5px;
+display: flex;
+justify-content:space-between;
+align-items:center;
+background-color:#e3e3e3;
+position: relative;
+z-index: 1;
+flex-direction: row;
+}
+
+.post::before {
+  content: "";
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: -1;
+  transition: 0.4s;
+}
+.post:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (max-width: 991px) {
+  .personal-info h2,
+  .articles-numbers h2{
+      font-size:20px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .personal-info h2 {
+      font-size:17px;
+  }
+}
+
+
+.personal-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex:2;
+  padding:5px 0px;
+  position: relative;
+}
+
+.auth-id {
+  background-color:#627A85;
+  position: absolute;
+  top:0;
+  left: 0;
+  margin:5px 0 5px 5px;
+  padding: 2px 7px 1px 6px;
+  border-radius:5px;
+}
+
+.info .post img {
+width: 120px;
+margin: 0px 10px;
+}
+.box-buttons {
+  padding-right:20px;
+  flex:1;
+  display:flex;
+  align-self:center;
+  justify-content:flex-end;
+}
+
+.update-btn,
+.delete-btn {
+color: black;
+border-radius: 7px;
+border: 2px solid black;
+cursor: pointer;
+transition: background-color 0.5s, color 0.5s;
+font-weight:bold;
+padding:5px;
+}
+
+.add-btn {
+  background-color: transparent;
+  border:2px solid #0D203A;
+  padding: 10px 30px;
+  color: black;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  font-weight:bold;
+  margin-top:10px;
+  position: relative;
+}
+.add-btn:hover {
+  background-color: #0D47A1;
+  color: white;
+}
+.input-auth-name {
+  border:none;
+  outline:none;
+  padding:10px 20px;
+  background-color:#05D661;
+  color:black;
+  font-size:1.1em;
+  border-radius:4px;
+  font-weight:700;
+  margin-top:10px;
+  transition:0.5s;
+}
+.input-auth-name::placeholder {
+  color:black;
+}
+.add-btn img {
+  width:20px;
+  position: absolute;
+  top:50%;
+  left:10%;
+  transform: translate(-50%,-50%);
+}
+
+.update-btn {
+background-color: transparent;
+border:2px solid #05D661;
+}
+
+.delete-btn {
+background-color: transparent;
+margin-left: 10px;
+border:2px solid red;
+}
+
+.update-btn:hover{
+  background-color:#05D661;
+  color: white;
+}
+.delete-btn:hover {
+background-color: red;
+color: white;
+}
+
+.sear {
+  margin-right: 10px;
+}
+/* 1 boxes */
+/* 1 Users */
+/* ************************************************************************************************ */
+/* 0 create user */
+.creation-msg {
+  color: green;
+  padding:10px;
+  width: 100%;
+  border: dashed 2px green;
+  border-radius:6px;
+  text-align: center;
+  margin-bottom:15px;
+  font-size:20px;
+}
+.name-mob-resize {
+  width: 300px;
+}
+@media (max-width: 768px) {
+  .creat-mob-resize {
+    width:270px;
+  }
+  .name-mob-resize {
+    width:240px;
+  }
+  .create-mob-tit-resize {
+    font-size:20px;
+  }
+}
+/* 1 create user */
+/* ************************************************************************************************ */
+/* 0 display user */
+
+.user-alt {
+  display: flex;
+  width: 100%;
+  border-bottom:#007BFF solid 3px;
+  padding-bottom:9px;
+  padding-top: 25px;
+  margin-bottom:20px;
+}
+.padd {
+  padding-right:5px;
+}
+.dis-uer-act {
+  background-color: #007BFF;
+  padding: 11px;
+  color: white;
+}
+.dis-uer-act:hover {
+  background-color:white ;
+  padding: 10px;
+  color:black;
+  border:#007BFF solid 2px;
+}
+.stand {
+  background-color:transparent;
+  color: black;
+  border:#007BFF solid 2px;
+  padding: 10px;
+  color:black;
+}
+.stand:hover {
+  background-color: #007BFF;
+  padding: 10px;
+  color:white;
+  border:#007BFF solid 2px;
+}
+.add-btn-dis-us-inf {
+  margin:20px 0;
+}
+/* 1 display user */
+/* ************************************************************************************************ */
+/* 0 create Bill */
+.date-bill-enter {
+  padding: 11px;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin:10px 0;
+  width: 100%;
+}
+/* 1 create Bill */
+/* ************************************************************************************************ */
+/* 0 Bill Show Admin */
+.Bill-dit-over {
+  justify-content: flex-start;
+}
+/* 1 Bill Show Admin */
+/* ************************************************************************************************ */
+/* 0 user request */
+.Table-tit {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom:10px;
+}
+.ren-size {
+  min-width: 100px;
+}
+/* 1 admin pages */
